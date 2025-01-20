@@ -10,9 +10,9 @@
     width: 85%;
     margin: auto;
     padding: 35px 0;
-    display: flex;
+     display: flex; 
     align-items: center;
-    justify-content: space-between;
+     justify-content: space-between; 
 }
 
 .logo {
@@ -21,14 +21,19 @@
 }
 .navbar ul li {
     list-style: none;
-    display: inline-block;
+    display: inline;
     margin: 0 20px;
     
 }
+
 .navbar ul li a{
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
+}
+.navbar ul li a:hover {
+    cursor: pointer;
+    text-decoration: underline red;
 }
 .content {
     width: 100%;
@@ -43,14 +48,7 @@
     width: 500px;
     color: aquamarine;
 }
-.banner-login {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://static.vecteezy.com/system/resources/previews/022/903/406/large_2x/ai-generative-3d-modern-luxury-real-estate-house-for-sale-and-rent-luxury-property-concept-ai-generated-artwork-photo.jpg);
-    background-size: cover;
-    background-position: center;
 
-}
 .op {
     color: red;
 }
@@ -61,7 +59,50 @@
     color: #fff;
 }
 .op4 {
-   margin-left: auto;
-   margin-right: auto;
-   display: block;
+  background-color: transparent;
+  width:100px;
+  height: 20px;
+  border: 2px white solid;
+  cursor: pointer;
+  position: absolute;
+  left: 35%;
+  bottom: 50px;
+
+}
+@keyframes stretch {
+    0% { transform: scale(0%);}
+    50% { transform: scale(50%);}
+    100% { transform: scale(100%);}
+    }
+.user-profile {
+    box-sizing: border-box;
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    backdrop-filter: blur(20px);
+    box-shadow: 0.005px 0px 30px white;
+    background-color: transparent;
+    height:400px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 35px;
+
+
+    animation-name: stretch;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+
+}
+.b {
+    width: 100%;
+    height: 100%;
+}
+.logo1 {
+    width: 120px;
+    cursor: pointer;
+    position: absolute;
+    left: 100px;
+    top: 40px;
 }
